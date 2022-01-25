@@ -1,0 +1,18 @@
+---
+- name: Install Visual Studio Code extensions
+  shell: code --install-extension {{ item }}
+  loop: "{{ vscode_installed_extensions }}"
+
+- name: Set Visual Studio Code configuration
+  template:
+    src: files/settings.json
+    dest: /Users/{{ lookup('env', 'USER') }}/Library/Application Support/Code/User/settings.json
+    owner: "{{ lookup('env', 'USER') }}"
+    force: yes
+
+- name: Set Visual Studio Code key bindings
+  template:
+    src: files/keybindings.json
+    dest: /Users/{{ lookup('env', 'USER') }}/Library/Application Support/Code/User/keybindings.json
+    owner: "{{ lookup('env', 'USER') }}"
+    force: yes

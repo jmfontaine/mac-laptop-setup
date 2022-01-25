@@ -1,0 +1,15 @@
+{
+  "editor.fontSize": 13,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [120],
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.hcl": "terraform",
+    "*.tidal": "haskell"
+  },
+  "python.formatting.provider": "black",
+  "workbench.colorTheme": "Seti Monokai"
+}

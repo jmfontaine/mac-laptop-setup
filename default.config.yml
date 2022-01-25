@@ -1,0 +1,87 @@
+---
+homebrew_taps:
+  - anchore/grype
+  - homebrew/cask-fonts
+  - homebrew/core
+
+homebrew_installed_packages:
+  - coreutils
+  - ctop
+  - curl
+  - diff-so-fancy
+  - dive
+  - exa
+  - git
+  - git-extras
+  - git-secrets
+  - gnu-sed
+  - go
+  - gpg
+  - grep
+  - grype
+  - gzip
+  - hadolint
+  - htop
+  - jq
+  - mas
+  - starship
+  - tfenv
+  - tgenv
+  - wget
+  - zplug
+  - zsh-completions
+
+homebrew_cask_apps:
+  - 1password
+  - alfred
+  - amazon-chime
+  - cleanshot
+  - clickup
+  - homebrew/cask/docker
+  - fantastical
+  - firefox
+  - font-meslo-lg-nerd-font
+  - github
+  - google-chrome
+  - google-drive
+  - gpg-suite-no-mail
+  - grammarly
+  - iterm2
+  - microsoft-teams
+  - notion
+  - slack
+  - typora
+  - visual-studio-code
+  - webex-meetings
+  - zoom
+
+mas_installed_apps:
+  - { id: 937984704, name: "Amphetamine" }
+  - { id: 441258766, name: "Magnet" }
+  - { id: 1475387142, name: "Tailscale" }
+  - { id: 488764545, name: "The Clock" }
+  # Safari Extensions
+  - { id: 1462114288, name: "Grammarly for Safari" }
+  - { id: 1559269364, name: "Notion Web Clipper" }
+
+vscode_installed_extensions:
+  - editorconfig.editorconfig
+  - hashicorp.terraform
+  - ms-azuretools.vscode-docker
+  - redhat.vscode-yaml
+  - SmukkeKim.theme-setimonokai
+  - streetsidesoftware.code-spell-checker
+  - Tyriar.sort-lines
+
+dotfiles_repo: git@github.com:jmfontaine/dotfiles.git
+dotfiles_repo_version: 2022-redux
+dotfiles_repo_local_destination: ~/Projects/Personal/dotfiles
+dotfiles_files:
+  - .config/starship.toml
+  - .dir_colors
+  - .editorconfig
+  - .gitconfig
+  - .gitconfig-work
+  - .gitignore
+  - .warprc
+  - .zshrc

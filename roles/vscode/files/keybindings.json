@@ -1,0 +1,21 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+enter",
+        "command": "tidal.evalMulti",
+        "when": "resourceExtname == '.tidal'&& editorTextFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-tidal.evalMulti"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "tidal.hush",
+        "when": "editorTextFocus && resourceExtname == .tidal"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "-tidal.hush"
+    }
+]
