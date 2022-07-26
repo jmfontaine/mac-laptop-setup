@@ -3,8 +3,10 @@ homebrew_taps:
   - anchore/grype
   - homebrew/cask-fonts
   - homebrew/core
+  - spacelift-io/spacelift/spacectl
 
 homebrew_installed_packages:
+  - checkov
   - coreutils
   - ctop
   - curl
@@ -24,8 +26,16 @@ homebrew_installed_packages:
   - htop
   - jq
   - mas
+  - opa
+  - pre-commit
+  - rust
   - starship
+  - terraform-docs
+  - terraformer
+  - terrascan
+  - env0/terratag/terratag
   - tfenv
+  - tfsec
   - tgenv
   - wget
   - zplug
@@ -35,6 +45,7 @@ homebrew_cask_apps:
   - 1password
   - alfred
   - amazon-chime
+  - bartender
   - cleanshot
   - clickup
   - homebrew/cask/docker
@@ -46,10 +57,13 @@ homebrew_cask_apps:
   - google-drive
   - gpg-suite-no-mail
   - grammarly
+  - insomnia
   - iterm2
   - microsoft-teams
   - notion
   - slack
+  - spacectl
+  - homebrew/cask/tailscale
   - typora
   - visual-studio-code
   - webex-meetings
@@ -58,7 +72,6 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 937984704, name: "Amphetamine" }
   - { id: 441258766, name: "Magnet" }
-  - { id: 1475387142, name: "Tailscale" }
   - { id: 488764545, name: "The Clock" }
   # Safari Extensions
   - { id: 1462114288, name: "Grammarly for Safari" }
